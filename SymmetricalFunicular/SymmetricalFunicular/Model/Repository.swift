@@ -36,7 +36,7 @@ struct Repository: Codable {
     let issuesURL, pullsURL, milestonesURL, notificationsURL: String
     let labelsURL, releasesURL: String
     let deploymentsURL: String
-    let createdAt, updatedAt, pushedAt: Date
+    let createdAt, updatedAt, pushedAt: String
     let gitURL, sshURL: String
     let cloneURL: String
     let svnURL: String
@@ -133,9 +133,15 @@ struct Repository: Codable {
     }
 }
 
-
-
-
+extension Repository: Hashable {
+    static func ==(lhs: Repository, rhs: Repository) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}
 
 
 typealias Repositories = [Repository]
