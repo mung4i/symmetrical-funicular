@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		7D1F30602B57E6300039EE35 /* SymmetricalFunicularApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F305F2B57E6300039EE35 /* SymmetricalFunicularApp.swift */; };
-		7D1F30622B57E6300039EE35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F30612B57E6300039EE35 /* ContentView.swift */; };
 		7D1F30642B57E6310039EE35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1F30632B57E6310039EE35 /* Assets.xcassets */; };
 		7D1F30672B57E6310039EE35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1F30662B57E6310039EE35 /* Preview Assets.xcassets */; };
 		7D1F30712B57E6310039EE35 /* SymmetricalFunicularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F30702B57E6310039EE35 /* SymmetricalFunicularTests.swift */; };
 		7D1F307B2B57E6310039EE35 /* SymmetricalFunicularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F307A2B57E6310039EE35 /* SymmetricalFunicularUITests.swift */; };
 		7D1F307D2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F307C2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift */; };
+		7D4A14562B57FA02009B93DE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A14552B57FA02009B93DE /* CardView.swift */; };
+		7DFBAAB52B57E97200171F20 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFBAAB42B57E97200171F20 /* SearchView.swift */; };
+		7DFBAAB82B57E9BA00171F20 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFBAAB72B57E9BA00171F20 /* Repository.swift */; };
+		7DFBAABA2B57EBD500171F20 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFBAAB92B57EBD500171F20 /* License.swift */; };
+		7DFBAABC2B57EBE600171F20 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFBAABB2B57EBE600171F20 /* Owner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		7D1F305C2B57E6300039EE35 /* SymmetricalFunicular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SymmetricalFunicular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1F305F2B57E6300039EE35 /* SymmetricalFunicularApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricalFunicularApp.swift; sourceTree = "<group>"; };
-		7D1F30612B57E6300039EE35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D1F30632B57E6310039EE35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D1F30662B57E6310039EE35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D1F306C2B57E6310039EE35 /* SymmetricalFunicularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymmetricalFunicularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,11 @@
 		7D1F30762B57E6310039EE35 /* SymmetricalFunicularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymmetricalFunicularUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1F307A2B57E6310039EE35 /* SymmetricalFunicularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricalFunicularUITests.swift; sourceTree = "<group>"; };
 		7D1F307C2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricalFunicularUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7D4A14552B57FA02009B93DE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7DFBAAB42B57E97200171F20 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		7DFBAAB72B57E9BA00171F20 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		7DFBAAB92B57EBD500171F20 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
+		7DFBAABB2B57EBE600171F20 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,9 @@
 		7D1F305E2B57E6300039EE35 /* SymmetricalFunicular */ = {
 			isa = PBXGroup;
 			children = (
+				7D4A14542B57F95D009B93DE /* UI */,
+				7DFBAAB62B57E99B00171F20 /* Model */,
 				7D1F305F2B57E6300039EE35 /* SymmetricalFunicularApp.swift */,
-				7D1F30612B57E6300039EE35 /* ContentView.swift */,
 				7D1F30632B57E6310039EE35 /* Assets.xcassets */,
 				7D1F30652B57E6310039EE35 /* Preview Content */,
 			);
@@ -125,6 +134,25 @@
 				7D1F307C2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift */,
 			);
 			path = SymmetricalFunicularUITests;
+			sourceTree = "<group>";
+		};
+		7D4A14542B57F95D009B93DE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7D4A14552B57FA02009B93DE /* CardView.swift */,
+				7DFBAAB42B57E97200171F20 /* SearchView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7DFBAAB62B57E99B00171F20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7DFBAAB92B57EBD500171F20 /* License.swift */,
+				7DFBAABB2B57EBE600171F20 /* Owner.swift */,
+				7DFBAAB72B57E9BA00171F20 /* Repository.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D1F30622B57E6300039EE35 /* ContentView.swift in Sources */,
+				7DFBAABC2B57EBE600171F20 /* Owner.swift in Sources */,
+				7DFBAAB52B57E97200171F20 /* SearchView.swift in Sources */,
+				7DFBAABA2B57EBD500171F20 /* License.swift in Sources */,
 				7D1F30602B57E6300039EE35 /* SymmetricalFunicularApp.swift in Sources */,
+				7D4A14562B57FA02009B93DE /* CardView.swift in Sources */,
+				7DFBAAB82B57E9BA00171F20 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
