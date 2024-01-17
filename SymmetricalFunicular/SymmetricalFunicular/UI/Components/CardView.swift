@@ -53,9 +53,9 @@ struct CardView: View {
                 
                 Spacer()
             }
-            .padding(20)
+            .padding(16)
         }
-        .frame(width: 375, height: 250)
+        .frame(width: 375, height: 240)
     }
 }
 
