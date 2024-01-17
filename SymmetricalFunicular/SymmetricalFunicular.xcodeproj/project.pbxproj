@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D1F30602B57E6300039EE35 /* SymmetricalFunicularApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F305F2B57E6300039EE35 /* SymmetricalFunicularApp.swift */; };
+		7D1F30622B57E6300039EE35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F30612B57E6300039EE35 /* ContentView.swift */; };
+		7D1F30642B57E6310039EE35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1F30632B57E6310039EE35 /* Assets.xcassets */; };
+		7D1F30672B57E6310039EE35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1F30662B57E6310039EE35 /* Preview Assets.xcassets */; };
+		7D1F30712B57E6310039EE35 /* SymmetricalFunicularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F30702B57E6310039EE35 /* SymmetricalFunicularTests.swift */; };
+		7D1F307B2B57E6310039EE35 /* SymmetricalFunicularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F307A2B57E6310039EE35 /* SymmetricalFunicularUITests.swift */; };
+		7D1F307D2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F307C2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D1F306D2B57E6310039EE35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D1F30542B57E62F0039EE35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D1F305B2B57E6300039EE35;
+			remoteInfo = SymmetricalFunicular;
+		};
+		7D1F30772B57E6310039EE35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D1F30542B57E62F0039EE35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D1F305B2B57E6300039EE35;
+			remoteInfo = SymmetricalFunicular;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D1F305C2B57E6300039EE35 /* SymmetricalFunicular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SymmetricalFunicular.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1F305F2B57E6300039EE35 /* SymmetricalFunicularApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricalFunicularApp.swift; sourceTree = "<group>"; };
+		7D1F30612B57E6300039EE35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7D1F30632B57E6310039EE35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D1F30662B57E6310039EE35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D1F306C2B57E6310039EE35 /* SymmetricalFunicularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymmetricalFunicularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1F30702B57E6310039EE35 /* SymmetricalFunicularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricalFunicularTests.swift; sourceTree = "<group>"; };
+		7D1F30762B57E6310039EE35 /* SymmetricalFunicularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymmetricalFunicularUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1F307A2B57E6310039EE35 /* SymmetricalFunicularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricalFunicularUITests.swift; sourceTree = "<group>"; };
+		7D1F307C2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricalFunicularUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D1F30592B57E6300039EE35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1F30692B57E6310039EE35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1F30732B57E6310039EE35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D1F30532B57E62F0039EE35 = {
+			isa = PBXGroup;
+			children = (
+				7D1F305E2B57E6300039EE35 /* SymmetricalFunicular */,
+				7D1F306F2B57E6310039EE35 /* SymmetricalFunicularTests */,
+				7D1F30792B57E6310039EE35 /* SymmetricalFunicularUITests */,
+				7D1F305D2B57E6300039EE35 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D1F305D2B57E6300039EE35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D1F305C2B57E6300039EE35 /* SymmetricalFunicular.app */,
+				7D1F306C2B57E6310039EE35 /* SymmetricalFunicularTests.xctest */,
+				7D1F30762B57E6310039EE35 /* SymmetricalFunicularUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D1F305E2B57E6300039EE35 /* SymmetricalFunicular */ = {
+			isa = PBXGroup;
+			children = (
+				7D1F305F2B57E6300039EE35 /* SymmetricalFunicularApp.swift */,
+				7D1F30612B57E6300039EE35 /* ContentView.swift */,
+				7D1F30632B57E6310039EE35 /* Assets.xcassets */,
+				7D1F30652B57E6310039EE35 /* Preview Content */,
+			);
+			path = SymmetricalFunicular;
+			sourceTree = "<group>";
+		};
+		7D1F30652B57E6310039EE35 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7D1F30662B57E6310039EE35 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D1F306F2B57E6310039EE35 /* SymmetricalFunicularTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D1F30702B57E6310039EE35 /* SymmetricalFunicularTests.swift */,
+			);
+			path = SymmetricalFunicularTests;
+			sourceTree = "<group>";
+		};
+		7D1F30792B57E6310039EE35 /* SymmetricalFunicularUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7D1F307A2B57E6310039EE35 /* SymmetricalFunicularUITests.swift */,
+				7D1F307C2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift */,
+			);
+			path = SymmetricalFunicularUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D1F305B2B57E6300039EE35 /* SymmetricalFunicular */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1F30802B57E6310039EE35 /* Build configuration list for PBXNativeTarget "SymmetricalFunicular" */;
+			buildPhases = (
+				7D1F30582B57E6300039EE35 /* Sources */,
+				7D1F30592B57E6300039EE35 /* Frameworks */,
+				7D1F305A2B57E6300039EE35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SymmetricalFunicular;
+			productName = SymmetricalFunicular;
+			productReference = 7D1F305C2B57E6300039EE35 /* SymmetricalFunicular.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D1F306B2B57E6310039EE35 /* SymmetricalFunicularTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1F30832B57E6310039EE35 /* Build configuration list for PBXNativeTarget "SymmetricalFunicularTests" */;
+			buildPhases = (
+				7D1F30682B57E6310039EE35 /* Sources */,
+				7D1F30692B57E6310039EE35 /* Frameworks */,
+				7D1F306A2B57E6310039EE35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D1F306E2B57E6310039EE35 /* PBXTargetDependency */,
+			);
+			name = SymmetricalFunicularTests;
+			productName = SymmetricalFunicularTests;
+			productReference = 7D1F306C2B57E6310039EE35 /* SymmetricalFunicularTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7D1F30752B57E6310039EE35 /* SymmetricalFunicularUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1F30862B57E6310039EE35 /* Build configuration list for PBXNativeTarget "SymmetricalFunicularUITests" */;
+			buildPhases = (
+				7D1F30722B57E6310039EE35 /* Sources */,
+				7D1F30732B57E6310039EE35 /* Frameworks */,
+				7D1F30742B57E6310039EE35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D1F30782B57E6310039EE35 /* PBXTargetDependency */,
+			);
+			name = SymmetricalFunicularUITests;
+			productName = SymmetricalFunicularUITests;
+			productReference = 7D1F30762B57E6310039EE35 /* SymmetricalFunicularUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D1F30542B57E62F0039EE35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					7D1F305B2B57E6300039EE35 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					7D1F306B2B57E6310039EE35 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 7D1F305B2B57E6300039EE35;
+					};
+					7D1F30752B57E6310039EE35 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 7D1F305B2B57E6300039EE35;
+					};
+				};
+			};
+			buildConfigurationList = 7D1F30572B57E62F0039EE35 /* Build configuration list for PBXProject "SymmetricalFunicular" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D1F30532B57E62F0039EE35;
+			productRefGroup = 7D1F305D2B57E6300039EE35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D1F305B2B57E6300039EE35 /* SymmetricalFunicular */,
+				7D1F306B2B57E6310039EE35 /* SymmetricalFunicularTests */,
+				7D1F30752B57E6310039EE35 /* SymmetricalFunicularUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D1F305A2B57E6300039EE35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1F30672B57E6310039EE35 /* Preview Assets.xcassets in Resources */,
+				7D1F30642B57E6310039EE35 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1F306A2B57E6310039EE35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1F30742B57E6310039EE35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D1F30582B57E6300039EE35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1F30622B57E6300039EE35 /* ContentView.swift in Sources */,
+				7D1F30602B57E6300039EE35 /* SymmetricalFunicularApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1F30682B57E6310039EE35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1F30712B57E6310039EE35 /* SymmetricalFunicularTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1F30722B57E6310039EE35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1F307B2B57E6310039EE35 /* SymmetricalFunicularUITests.swift in Sources */,
+				7D1F307D2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D1F306E2B57E6310039EE35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D1F305B2B57E6300039EE35 /* SymmetricalFunicular */;
+			targetProxy = 7D1F306D2B57E6310039EE35 /* PBXContainerItemProxy */;
+		};
+		7D1F30782B57E6310039EE35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D1F305B2B57E6300039EE35 /* SymmetricalFunicular */;
+			targetProxy = 7D1F30772B57E6310039EE35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7D1F307E2B57E6310039EE35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D1F307F2B57E6310039EE35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D1F30812B57E6310039EE35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SymmetricalFunicular/Preview Content\"";
+				DEVELOPMENT_TEAM = KK36F2B9L7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.88Studios.SymmetricalFunicular;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D1F30822B57E6310039EE35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SymmetricalFunicular/Preview Content\"";
+				DEVELOPMENT_TEAM = KK36F2B9L7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.88Studios.SymmetricalFunicular;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7D1F30842B57E6310039EE35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KK36F2B9L7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.88Studios.SymmetricalFunicularTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SymmetricalFunicular.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SymmetricalFunicular";
+			};
+			name = Debug;
+		};
+		7D1F30852B57E6310039EE35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KK36F2B9L7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.88Studios.SymmetricalFunicularTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SymmetricalFunicular.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SymmetricalFunicular";
+			};
+			name = Release;
+		};
+		7D1F30872B57E6310039EE35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KK36F2B9L7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.88Studios.SymmetricalFunicularUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SymmetricalFunicular;
+			};
+			name = Debug;
+		};
+		7D1F30882B57E6310039EE35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KK36F2B9L7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.88Studios.SymmetricalFunicularUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SymmetricalFunicular;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D1F30572B57E62F0039EE35 /* Build configuration list for PBXProject "SymmetricalFunicular" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1F307E2B57E6310039EE35 /* Debug */,
+				7D1F307F2B57E6310039EE35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D1F30802B57E6310039EE35 /* Build configuration list for PBXNativeTarget "SymmetricalFunicular" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1F30812B57E6310039EE35 /* Debug */,
+				7D1F30822B57E6310039EE35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D1F30832B57E6310039EE35 /* Build configuration list for PBXNativeTarget "SymmetricalFunicularTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1F30842B57E6310039EE35 /* Debug */,
+				7D1F30852B57E6310039EE35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D1F30862B57E6310039EE35 /* Build configuration list for PBXNativeTarget "SymmetricalFunicularUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1F30872B57E6310039EE35 /* Debug */,
+				7D1F30882B57E6310039EE35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D1F30542B57E62F0039EE35 /* Project object */;
+}
