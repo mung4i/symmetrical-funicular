@@ -85,6 +85,8 @@ struct SearchView: View {
                 .foregroundColor(colorScheme == .dark ? .white : .black)
                 .cornerRadius(10)
                 
+                Spacer()
+                
                 if viewModel.isLoading {
                     VStack(alignment: .center) {
                         Spacer()
@@ -99,6 +101,7 @@ struct SearchView: View {
                         rightAction: { viewModel.incrementPage() },
                         leftAction: { viewModel.decrementPage() }
                     )
+                    .padding(.bottom, 8)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
