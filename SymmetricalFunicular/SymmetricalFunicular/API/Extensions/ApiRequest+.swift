@@ -18,38 +18,9 @@ extension ApiRequest {
     /// - Returns: the backend response encoded by using the infered request response type.
     /// - Throws: An ApiError exception containing all the information from the server.
     ///
-    public func doRequest(_ params: RequestParameters) async throws -> ResponseType? {
-        
-        if let response = try await response(
-            for: params.environment,
-            networkClient: params.networkClient
-        ) {
-            return response
-        }
-        
-        // for envs .live or .failing it should try to send data
-        if params.environment != .mock {
-            do {
-                return try await doLiveRequest(params)
-            } catch ApiException.unknownError {
-                throw ApiException.networkError(.invalidResponse)
-            }
-        }
-        throw ApiException.networkError(.invalidResponse)
-    }
-    
-    /// Executes an API call.
-    ///
-    /// - Parameters:
-    ///    - networkClient: the network client to use. It could be real or mock.
-    ///    - environment: determines whether to use live or mock environment.
-    ///
-    /// - Returns: the backend response encoded by using the infered request response type.
-    /// - Throws: An ApiError exception containing all the information from the server.
-    ///
     public func doRequest(
         _ params: RequestParameters,
-        queryParameters: [String: String]
+        queryParameters: [String: String] = [:]
     ) async throws -> ResponseType? {
         
         if let response = try await response(

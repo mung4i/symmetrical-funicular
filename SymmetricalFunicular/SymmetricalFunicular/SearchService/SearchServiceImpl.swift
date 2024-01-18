@@ -14,7 +14,7 @@ class SearchServiceImpl: SearchService {
     
     init(
         networkClient: NetworkClient = NetworkClientImpl(),
-        apiEnvironment: ApiEnvironment = .mock
+        apiEnvironment: ApiEnvironment = .live
     ) {
         self.networkClient = networkClient
         self.apiEnvironment = apiEnvironment
@@ -54,9 +54,6 @@ extension SearchServiceImpl: ApiService {
         queryParameters: [String: String] = [:]
     ) async throws -> T.ResponseType? where T: ApiRequest {
         let params = RequestParameters(networkClient, apiEnvironment)
-        if queryParameters.isEmpty {
-            return try await request.doRequest(params)!
-        }
-        return try await request.doRequest(params, queryParameters: queryParameters)!
+        return try await request.doRequest(params, queryParameters: queryParameters)
     }
 }
