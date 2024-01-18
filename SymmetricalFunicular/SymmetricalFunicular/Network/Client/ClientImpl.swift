@@ -138,12 +138,10 @@ struct NetworkClientImpl: NetworkClient {
             let object = try JSONDecoder().decode(type, from: data)
             return .success(object)
         }
-        
         catch {
             if error is DecodingError {
                 return .failure(.invalidData)
             }
-            
             return .failure(.other(error))
         }
     }
