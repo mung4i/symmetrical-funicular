@@ -13,6 +13,7 @@
 		7D1F30712B57E6310039EE35 /* SymmetricalFunicularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F30702B57E6310039EE35 /* SymmetricalFunicularTests.swift */; };
 		7D1F307B2B57E6310039EE35 /* SymmetricalFunicularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F307A2B57E6310039EE35 /* SymmetricalFunicularUITests.swift */; };
 		7D1F307D2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F307C2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift */; };
+		7D446BD12B593449000FF185 /* PaginationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D446BD02B593449000FF185 /* PaginationView.swift */; };
 		7D4A14562B57FA02009B93DE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A14552B57FA02009B93DE /* CardView.swift */; };
 		7D4A14592B5800FB009B93DE /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A14582B5800FB009B93DE /* Client.swift */; };
 		7D4A145B2B580178009B93DE /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A145A2B580178009B93DE /* Method.swift */; };
@@ -68,6 +69,7 @@
 		7D1F30762B57E6310039EE35 /* SymmetricalFunicularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymmetricalFunicularUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1F307A2B57E6310039EE35 /* SymmetricalFunicularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricalFunicularUITests.swift; sourceTree = "<group>"; };
 		7D1F307C2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricalFunicularUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7D446BD02B593449000FF185 /* PaginationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationView.swift; sourceTree = "<group>"; };
 		7D4A14552B57FA02009B93DE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		7D4A14582B5800FB009B93DE /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		7D4A145A2B580178009B93DE /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 			children = (
 				7D4A14552B57FA02009B93DE /* CardView.swift */,
 				7D4A148C2B58467E009B93DE /* SearchBarView.swift */,
+				7D446BD02B593449000FF185 /* PaginationView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				7D4A14722B580540009B93DE /* ApiEnvironment.swift in Sources */,
 				7D4A14792B58070C009B93DE /* ErrorResponse.swift in Sources */,
 				7DFBAAB82B57E9BA00171F20 /* Repository.swift in Sources */,
+				7D446BD12B593449000FF185 /* PaginationView.swift in Sources */,
 				7D4A148B2B581BCB009B93DE /* SearchServiceImpl.swift in Sources */,
 				7D4A148D2B58467E009B93DE /* SearchBarView.swift in Sources */,
 				7D4A14892B581AF6009B93DE /* SearchService.swift in Sources */,

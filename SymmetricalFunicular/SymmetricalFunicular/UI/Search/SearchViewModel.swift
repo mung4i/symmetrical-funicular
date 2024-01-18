@@ -11,6 +11,8 @@ import SwiftUI
 class SearchViewModel: ObservableObject {
         
     @Published var repositories: Repositories = []
+    @Published var isLoading: Bool = false
+    @Published var hasError: Bool = false
     
     private var searchService: SearchService {
         SearchServiceImpl()
@@ -24,7 +26,10 @@ class SearchViewModel: ObservableObject {
         sort: Sort = .pushed
     ) {
         Task {
+            isLoading = true
+            try await Task.sleep(nanoseconds: 1_000_000_000)
             do {
+                isLoading = false
                 repositories = try await searchService.search(
                     username: username,
                     page: page,
@@ -32,7 +37,8 @@ class SearchViewModel: ObservableObject {
                     sort: sort
                 ) ?? []
             } catch {
-                fatalError(error.localizedDescription)
+                isLoading = false
+                hasError = true
             }
         }
     }
