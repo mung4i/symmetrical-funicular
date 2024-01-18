@@ -10,10 +10,8 @@
 		7D1F30602B57E6300039EE35 /* SymmetricalFunicularApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F305F2B57E6300039EE35 /* SymmetricalFunicularApp.swift */; };
 		7D1F30642B57E6310039EE35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1F30632B57E6310039EE35 /* Assets.xcassets */; };
 		7D1F30672B57E6310039EE35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1F30662B57E6310039EE35 /* Preview Assets.xcassets */; };
-		7D1F30712B57E6310039EE35 /* SymmetricalFunicularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F30702B57E6310039EE35 /* SymmetricalFunicularTests.swift */; };
-		7D1F307B2B57E6310039EE35 /* SymmetricalFunicularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F307A2B57E6310039EE35 /* SymmetricalFunicularUITests.swift */; };
-		7D1F307D2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F307C2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift */; };
 		7D446BD12B593449000FF185 /* PaginationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D446BD02B593449000FF185 /* PaginationView.swift */; };
+		7D446BD42B5967D6000FF185 /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D446BD32B5967D6000FF185 /* SearchViewModelTests.swift */; };
 		7D4A14562B57FA02009B93DE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A14552B57FA02009B93DE /* CardView.swift */; };
 		7D4A14592B5800FB009B93DE /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A14582B5800FB009B93DE /* Client.swift */; };
 		7D4A145B2B580178009B93DE /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A145A2B580178009B93DE /* Method.swift */; };
@@ -65,11 +63,10 @@
 		7D1F30632B57E6310039EE35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D1F30662B57E6310039EE35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D1F306C2B57E6310039EE35 /* SymmetricalFunicularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymmetricalFunicularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D1F30702B57E6310039EE35 /* SymmetricalFunicularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricalFunicularTests.swift; sourceTree = "<group>"; };
 		7D1F30762B57E6310039EE35 /* SymmetricalFunicularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymmetricalFunicularUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D1F307A2B57E6310039EE35 /* SymmetricalFunicularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricalFunicularUITests.swift; sourceTree = "<group>"; };
-		7D1F307C2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetricalFunicularUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7D446BD02B593449000FF185 /* PaginationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationView.swift; sourceTree = "<group>"; };
+		7D446BD22B5963A0000FF185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7D446BD32B5967D6000FF185 /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
 		7D4A14552B57FA02009B93DE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		7D4A14582B5800FB009B93DE /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		7D4A145A2B580178009B93DE /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
@@ -128,7 +125,6 @@
 			children = (
 				7D1F305E2B57E6300039EE35 /* SymmetricalFunicular */,
 				7D1F306F2B57E6310039EE35 /* SymmetricalFunicularTests */,
-				7D1F30792B57E6310039EE35 /* SymmetricalFunicularUITests */,
 				7D1F305D2B57E6300039EE35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,6 +142,7 @@
 		7D1F305E2B57E6300039EE35 /* SymmetricalFunicular */ = {
 			isa = PBXGroup;
 			children = (
+				7D446BD22B5963A0000FF185 /* Info.plist */,
 				7D4A14872B581ACD009B93DE /* SearchService */,
 				7D4A146D2B5804E7009B93DE /* API */,
 				7D4A14572B5800EB009B93DE /* Network */,
@@ -169,18 +166,9 @@
 		7D1F306F2B57E6310039EE35 /* SymmetricalFunicularTests */ = {
 			isa = PBXGroup;
 			children = (
-				7D1F30702B57E6310039EE35 /* SymmetricalFunicularTests.swift */,
+				7D446BD32B5967D6000FF185 /* SearchViewModelTests.swift */,
 			);
 			path = SymmetricalFunicularTests;
-			sourceTree = "<group>";
-		};
-		7D1F30792B57E6310039EE35 /* SymmetricalFunicularUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7D1F307A2B57E6310039EE35 /* SymmetricalFunicularUITests.swift */,
-				7D1F307C2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift */,
-			);
-			path = SymmetricalFunicularUITests;
 			sourceTree = "<group>";
 		};
 		7D4A14542B57F95D009B93DE /* UI */ = {
@@ -498,7 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D1F30712B57E6310039EE35 /* SymmetricalFunicularTests.swift in Sources */,
+				7D446BD42B5967D6000FF185 /* SearchViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,8 +494,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D1F307B2B57E6310039EE35 /* SymmetricalFunicularUITests.swift in Sources */,
-				7D1F307D2B57E6310039EE35 /* SymmetricalFunicularUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,12 +637,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SymmetricalFunicular/Preview Content\"";
 				DEVELOPMENT_TEAM = KK36F2B9L7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SymmetricalFunicular/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -680,12 +668,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SymmetricalFunicular/Preview Content\"";
 				DEVELOPMENT_TEAM = KK36F2B9L7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SymmetricalFunicular/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
