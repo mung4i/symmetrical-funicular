@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct SearchView: View {
     private let defaultSearchText = "Find your fav Github creator! 🧑🏽‍🎨"
     
@@ -19,28 +17,6 @@ struct SearchView: View {
     @State private var sort: Sort = .pushed
     @State private var searchText = ""
     @State private var showSettingsMenu = false
-    var itemsPerPage = [5, 10, 15 , 20]
-    var allCases: [Sort] {
-        [
-            .created,
-            .updated,
-            .pushed,
-            .fullName
-        ]
-    }
-    
-    func allCasesDescription(_ sortCase: Sort) -> String {
-        switch sortCase {
-        case .created:
-            return "Created"
-        case .updated:
-            return "Updated"
-        case .pushed:
-            return "Pushed"
-        case .fullName:
-            return "Full Name"
-        }
-    }
 
     @StateObject var viewModel = SearchViewModel()
     
@@ -82,15 +58,15 @@ struct SearchView: View {
                 
                 HStack {
                     Picker("Items per page", selection: $perPage) {
-                        ForEach(itemsPerPage, id: \.self) { item in
+                        ForEach(viewModel.itemsPerPage, id: \.self) { item in
                             Text("Items per page: \(item)")
                                 .tag(item)
                         }
                     }
                     
                     Picker("Sort", selection: $sort) {
-                        ForEach(allCases, id: \.self) {
-                            Text("Sort: \(allCasesDescription($0))")
+                        ForEach(viewModel.allCases, id: \.self) {
+                            Text("Sort: \(viewModel.allCasesDescription($0))")
                                 .tag($0)
                         }
                     }

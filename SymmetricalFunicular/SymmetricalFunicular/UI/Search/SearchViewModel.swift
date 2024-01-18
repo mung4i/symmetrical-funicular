@@ -10,12 +10,42 @@ import SwiftUI
 
 class SearchViewModel: ObservableObject {
         
-    @Published var repositories: Repositories = []
+    @Published var repositories: Repositories = [] {
+        didSet {
+            print(repositories)
+        }
+    }
     @Published var isLoading: Bool = false
     @Published var hasError: Bool = false
     
-    private var searchService: SearchService {
-        SearchServiceImpl()
+    var allCases: [Sort] {
+        [
+            .created,
+            .updated,
+            .pushed,
+            .fullName
+        ]
+    }
+    
+    var itemsPerPage = [5, 10, 15 , 20]
+    
+    let searchService: SearchService
+    
+    init(searchService: SearchService = SearchServiceImpl()) {
+        self.searchService = searchService
+    }
+    
+    func allCasesDescription(_ sortCase: Sort) -> String {
+        switch sortCase {
+        case .created:
+            return "Created"
+        case .updated:
+            return "Updated"
+        case .pushed:
+            return "Pushed"
+        case .fullName:
+            return "Full Name"
+        }
     }
     
     @MainActor
@@ -27,7 +57,7 @@ class SearchViewModel: ObservableObject {
     ) {
         Task {
             isLoading = true
-            try await Task.sleep(nanoseconds: 1_000_000_000)
+//            try await Task.sleep(nanoseconds: 1_000_000_000) uncomment to see loading state
             do {
                 isLoading = false
                 repositories = try await searchService.search(
