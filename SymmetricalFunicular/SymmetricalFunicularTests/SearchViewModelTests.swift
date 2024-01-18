@@ -22,10 +22,8 @@ final class SearchViewModelTests: XCTestCase {
     override func tearDownWithError() throws {
         sut = nil
     }
-
-    func testFetchRepositories() async {
-        XCTAssert(sut.repositories.isEmpty)
-        
+    
+    private func fetchRepositories() async {
         let expectation = expectation(description: "fetching repositories")
         
         
@@ -38,6 +36,12 @@ final class SearchViewModelTests: XCTestCase {
         }
         
         await fulfillment(of: [expectation], timeout: 2)
+    }
+
+    func testFetchRepositories() async {
+        XCTAssert(sut.repositories.isEmpty)
+        
+        await fetchRepositories()
         XCTAssertEqual(sut.repositories.count, 28)
     }
     
@@ -54,19 +58,7 @@ final class SearchViewModelTests: XCTestCase {
     func testIncrementIsEnabled() async{
         XCTAssert(sut.repositories.isEmpty)
         
-        
-        let expectation = expectation(description: "fetching repositories")
-        
-        
-        await sut.fetchRepositories(
-            username: "oooooo"
-        )
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            expectation.fulfill()
-        }
-        
-        await fulfillment(of: [expectation], timeout: 2)
+        await fetchRepositories()
         XCTAssertEqual(sut.repositories.count, 28)
         
         XCTAssert(sut.isIncrementEnabled())
@@ -75,25 +67,9 @@ final class SearchViewModelTests: XCTestCase {
     func testDecrementIsEnabled() async {
         XCTAssert(sut.repositories.isEmpty)
         
-        
-        let expectation = expectation(description: "fetching repositories")
-        
-        
-        await sut.fetchRepositories(
-            username: "oooooo"
-        )
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            expectation.fulfill()
-        }
-        
-        await fulfillment(of: [expectation], timeout: 2)
+        await fetchRepositories()
         await sut.incrementPage()
         XCTAssertEqual(sut.repositories.count, 28)
-        
-        
         XCTAssert(sut.isDecrementEnabled())
     }
-
-
 }
