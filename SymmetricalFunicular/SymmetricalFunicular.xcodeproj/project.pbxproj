@@ -12,6 +12,7 @@
 		7D1F30672B57E6310039EE35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1F30662B57E6310039EE35 /* Preview Assets.xcassets */; };
 		7D446BD12B593449000FF185 /* PaginationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D446BD02B593449000FF185 /* PaginationView.swift */; };
 		7D446BD42B5967D6000FF185 /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D446BD32B5967D6000FF185 /* SearchViewModelTests.swift */; };
+		7D446BD72B597665000FF185 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D446BD62B597665000FF185 /* EmptyStateView.swift */; };
 		7D4A14562B57FA02009B93DE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A14552B57FA02009B93DE /* CardView.swift */; };
 		7D4A14592B5800FB009B93DE /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A14582B5800FB009B93DE /* Client.swift */; };
 		7D4A145B2B580178009B93DE /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4A145A2B580178009B93DE /* Method.swift */; };
@@ -48,13 +49,6 @@
 			remoteGlobalIDString = 7D1F305B2B57E6300039EE35;
 			remoteInfo = SymmetricalFunicular;
 		};
-		7D1F30772B57E6310039EE35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7D1F30542B57E62F0039EE35 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D1F305B2B57E6300039EE35;
-			remoteInfo = SymmetricalFunicular;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -63,10 +57,10 @@
 		7D1F30632B57E6310039EE35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D1F30662B57E6310039EE35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D1F306C2B57E6310039EE35 /* SymmetricalFunicularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymmetricalFunicularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D1F30762B57E6310039EE35 /* SymmetricalFunicularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymmetricalFunicularUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D446BD02B593449000FF185 /* PaginationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationView.swift; sourceTree = "<group>"; };
 		7D446BD22B5963A0000FF185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7D446BD32B5967D6000FF185 /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
+		7D446BD62B597665000FF185 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		7D4A14552B57FA02009B93DE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		7D4A14582B5800FB009B93DE /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		7D4A145A2B580178009B93DE /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
@@ -110,13 +104,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D1F30732B57E6310039EE35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -134,7 +121,6 @@
 			children = (
 				7D1F305C2B57E6300039EE35 /* SymmetricalFunicular.app */,
 				7D1F306C2B57E6310039EE35 /* SymmetricalFunicularTests.xctest */,
-				7D1F30762B57E6310039EE35 /* SymmetricalFunicularUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,6 +217,7 @@
 			children = (
 				7DFBAAB42B57E97200171F20 /* SearchView.swift */,
 				7D4A146A2B580396009B93DE /* SearchViewModel.swift */,
+				7D446BD62B597665000FF185 /* EmptyStateView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -359,24 +346,6 @@
 			productReference = 7D1F306C2B57E6310039EE35 /* SymmetricalFunicularTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7D1F30752B57E6310039EE35 /* SymmetricalFunicularUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D1F30862B57E6310039EE35 /* Build configuration list for PBXNativeTarget "SymmetricalFunicularUITests" */;
-			buildPhases = (
-				7D1F30722B57E6310039EE35 /* Sources */,
-				7D1F30732B57E6310039EE35 /* Frameworks */,
-				7D1F30742B57E6310039EE35 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7D1F30782B57E6310039EE35 /* PBXTargetDependency */,
-			);
-			name = SymmetricalFunicularUITests;
-			productName = SymmetricalFunicularUITests;
-			productReference = 7D1F30762B57E6310039EE35 /* SymmetricalFunicularUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -391,10 +360,6 @@
 						CreatedOnToolsVersion = 15.1;
 					};
 					7D1F306B2B57E6310039EE35 = {
-						CreatedOnToolsVersion = 15.1;
-						TestTargetID = 7D1F305B2B57E6300039EE35;
-					};
-					7D1F30752B57E6310039EE35 = {
 						CreatedOnToolsVersion = 15.1;
 						TestTargetID = 7D1F305B2B57E6300039EE35;
 					};
@@ -415,7 +380,6 @@
 			targets = (
 				7D1F305B2B57E6300039EE35 /* SymmetricalFunicular */,
 				7D1F306B2B57E6310039EE35 /* SymmetricalFunicularTests */,
-				7D1F30752B57E6310039EE35 /* SymmetricalFunicularUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -438,13 +402,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D1F30742B57E6310039EE35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -458,6 +415,7 @@
 				7DFBAABC2B57EBE600171F20 /* Owner.swift in Sources */,
 				7D4A14592B5800FB009B93DE /* Client.swift in Sources */,
 				7DFBAAB52B57E97200171F20 /* SearchView.swift in Sources */,
+				7D446BD72B597665000FF185 /* EmptyStateView.swift in Sources */,
 				7D4A14652B5802E5009B93DE /* URLRequest+Curl.swift in Sources */,
 				7DFBAABA2B57EBD500171F20 /* License.swift in Sources */,
 				7D1F30602B57E6300039EE35 /* SymmetricalFunicularApp.swift in Sources */,
@@ -490,13 +448,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D1F30722B57E6310039EE35 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -504,11 +455,6 @@
 			isa = PBXTargetDependency;
 			target = 7D1F305B2B57E6300039EE35 /* SymmetricalFunicular */;
 			targetProxy = 7D1F306D2B57E6310039EE35 /* PBXContainerItemProxy */;
-		};
-		7D1F30782B57E6310039EE35 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7D1F305B2B57E6300039EE35 /* SymmetricalFunicular */;
-			targetProxy = 7D1F30772B57E6310039EE35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -657,9 +603,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.88Studios.SymmetricalFunicular;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -688,9 +637,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.88Studios.SymmetricalFunicular;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -734,42 +686,6 @@
 			};
 			name = Release;
 		};
-		7D1F30872B57E6310039EE35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KK36F2B9L7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.88Studios.SymmetricalFunicularUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SymmetricalFunicular;
-			};
-			name = Debug;
-		};
-		7D1F30882B57E6310039EE35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KK36F2B9L7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.88Studios.SymmetricalFunicularUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SymmetricalFunicular;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -796,15 +712,6 @@
 			buildConfigurations = (
 				7D1F30842B57E6310039EE35 /* Debug */,
 				7D1F30852B57E6310039EE35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D1F30862B57E6310039EE35 /* Build configuration list for PBXNativeTarget "SymmetricalFunicularUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D1F30872B57E6310039EE35 /* Debug */,
-				7D1F30882B57E6310039EE35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

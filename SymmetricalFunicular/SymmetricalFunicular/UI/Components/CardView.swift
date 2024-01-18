@@ -74,7 +74,7 @@ struct CardView: View {
             .padding(16)
             
         }
-        .frame(height: 240)
+        .frame(height: 230)
     }
 }
 
