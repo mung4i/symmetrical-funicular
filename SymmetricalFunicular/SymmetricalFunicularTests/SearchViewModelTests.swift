@@ -30,9 +30,7 @@ final class SearchViewModelTests: XCTestCase {
         
         
         await sut.fetchRepositories(
-            username: "oooooo",
-            page: 1,
-            perPage: 10
+            username: "oooooo"
         )
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
@@ -42,5 +40,60 @@ final class SearchViewModelTests: XCTestCase {
         await fulfillment(of: [expectation], timeout: 2)
         XCTAssertEqual(sut.repositories.count, 28)
     }
+    
+    func testIncrementIsDisabled() {
+        XCTAssert(sut.repositories.isEmpty)
+        XCTAssert(!sut.isIncrementEnabled())
+    }
+    
+    func testDecrementIsDisabled() {
+        XCTAssert(sut.repositories.isEmpty)
+        XCTAssert(!sut.isDecrementEnabled())
+    }
+    
+    func testIncrementIsEnabled() async{
+        XCTAssert(sut.repositories.isEmpty)
+        
+        
+        let expectation = expectation(description: "fetching repositories")
+        
+        
+        await sut.fetchRepositories(
+            username: "oooooo"
+        )
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            expectation.fulfill()
+        }
+        
+        await fulfillment(of: [expectation], timeout: 2)
+        XCTAssertEqual(sut.repositories.count, 28)
+        
+        XCTAssert(sut.isIncrementEnabled())
+    }
+    
+    func testDecrementIsEnabled() async {
+        XCTAssert(sut.repositories.isEmpty)
+        
+        
+        let expectation = expectation(description: "fetching repositories")
+        
+        
+        await sut.fetchRepositories(
+            username: "oooooo"
+        )
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            expectation.fulfill()
+        }
+        
+        await fulfillment(of: [expectation], timeout: 2)
+        await sut.incrementPage()
+        XCTAssertEqual(sut.repositories.count, 28)
+        
+        
+        XCTAssert(sut.isDecrementEnabled())
+    }
+
 
 }

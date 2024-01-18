@@ -10,27 +10,34 @@ import SwiftUI
 struct SearchView: View {
     private let defaultSearchText = "Find your fav Github creator! 🧑🏽‍🎨"
     
-    @State private var committed = false
-    @State private var page = 1
-    @State private var perPage = 10
-    @State private var previousSearchText = ""
-    @State private var sort: Sort = .pushed
     @State private var searchText = ""
-    @State private var showSettingsMenu = false
 
     @StateObject var viewModel = SearchViewModel()
     
     @SwiftUI.Environment(\.colorScheme) private var colorScheme
     @SwiftUI.Environment(\.dismissSearch) private var dismissSearch
     
-    private var repositories: some View {
+    private var repositoriesScreen: some View {
+        VStack {
+            if viewModel.showEmptyState() {
+                Spacer()
+                EmptyStateView(title: "No more repositories to browse")
+                Spacer()
+            } else {
+                repositoriesView
+            }
+        }
+    }
+    
+    private var repositoriesView: some View {
         ScrollViewReader { proxy in
             VStack {
                 List {
                     ForEach(
-                        Array(viewModel.repositories.enumerated()),
-                        id: \.offset
-                    ) { index, element in
+                        (0..<viewModel.repositories.count),
+                        id: \.self
+                    ) { index in
+                        let element = viewModel.repositories[index]
                         CardView(
                             avatar: element.owner.avatarURL,
                             description: element.description ?? "",
@@ -48,23 +55,25 @@ struct SearchView: View {
                     proxy.scrollTo(0)
                 }
             }
+            .transition(.identity)
+            .animation(.linear, value: viewModel.repositories)
         }
     }
     
     var body: some View {
         NavigationView {
             VStack {
-                SearchBarView(committed: $committed, searchText: $searchText)
+                SearchBarView(committed: $viewModel.committed, searchText: $searchText)
                 
                 HStack {
-                    Picker("Items per page", selection: $perPage) {
+                    Picker("Items per page", selection: $viewModel.perPage) {
                         ForEach(viewModel.itemsPerPage, id: \.self) { item in
                             Text("Items per page: \(item)")
                                 .tag(item)
                         }
                     }
                     
-                    Picker("Sort", selection: $sort) {
+                    Picker("Sort", selection: $viewModel.sort) {
                         ForEach(viewModel.allCases, id: \.self) {
                             Text("Sort: \(viewModel.allCasesDescription($0))")
                                 .tag($0)
@@ -83,12 +92,12 @@ struct SearchView: View {
                         Spacer()
                     }
                 } else {
-                    repositories
+                    repositoriesScreen
                     PaginationView(
-                        isRightButtonEnabled: isIncrementEnabled(),
-                        isLeftButtonEnabled: isDecrementEnabled(),
-                        rightAction: { incrementPage() },
-                        leftAction: { decrementPage() }
+                        isRightButtonEnabled: viewModel.isIncrementEnabled(),
+                        isLeftButtonEnabled: viewModel.isDecrementEnabled(),
+                        rightAction: { viewModel.incrementPage() },
+                        leftAction: { viewModel.decrementPage() }
                     )
                 }
             }
@@ -101,23 +110,19 @@ struct SearchView: View {
                 }
             }
         }
-        .onChange(of: committed) {
+        .onChange(of: viewModel.committed) {
             if searchText != "" {
-                previousSearchText = searchText
                 viewModel.fetchRepositories(
-                    username: searchText,
-                    page: page,
-                    perPage: perPage,
-                    sort: sort
+                    username: searchText
                 )
                 searchText = ""
             }
         }
-        .onChange(of: sort) {
-            updateSearchParameters()
+        .onChange(of: viewModel.sort) {
+            viewModel.updateSearchParameters()
         }
-        .onChange(of: perPage) {
-            updateSearchParameters()
+        .onChange(of: viewModel.perPage) {
+            viewModel.updateSearchParameters()
         }
         .alert(isPresented: $viewModel.hasError) {
             Alert(
@@ -129,43 +134,6 @@ struct SearchView: View {
                         viewModel.hasError = false
                     }
                 )
-            )
-        }
-    }
-    
-    private func isIncrementEnabled() -> Bool {
-        return page >= 1
-    }
-    
-    private func isDecrementEnabled() -> Bool {
-        return page > 1
-    }
-    
-    private func incrementPage() {
-        guard isIncrementEnabled() else {
-            return
-        }
-        
-        page = page + 1
-        updateSearchParameters()
-    }
-    
-    private func decrementPage() {
-        guard isDecrementEnabled() else {
-            return
-        }
-        
-        page = page - 1
-        updateSearchParameters()
-    }
-    
-    private func updateSearchParameters() {
-        if previousSearchText != "" {
-            viewModel.fetchRepositories(
-                username: previousSearchText,
-                page: page,
-                perPage: perPage,
-                sort: sort
             )
         }
     }
